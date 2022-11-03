@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 4</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 360px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="margin-bottom: 1rem">Todo List</h1>
+    <button
+      style="
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+      "
+      id="load-todo-items-button">
+      Fetch
+    </button>
+
+    <select id="visibility-input" style="width: 100%; margin-bottom: 1rem">
+      <option value="all">all</option>
+      <option value="active">active</option>
+      <option value="completed">completed</option>
+    </select>
+
+    <ul id="todo-list" style="width: 100%"></ul>
+  </body>
+  <script src="script.js"></script>
+</html>
