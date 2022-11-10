@@ -1,0 +1,77 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+      }
+      nav {
+        display: flex;
+        width: 100%;
+        padding: 2rem;
+        font-weight: 700;
+      }
+      .nav-btn {
+        padding: 0 1.25rem;
+        box-sizing: border-box;
+        text-transform: uppercase;
+      }
+      .nav-btn-outlined {
+        padding: 0 1.25rem;
+        border: 2px solid #2095f3;
+      }
+      .nav-btn-contained {
+        padding: 0 1.25rem;
+        color: white;
+        background-color: #2095f3;
+      }
+      .text-blue {
+        color: #2095f3;
+      }
+      .nav-btn-group {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+      }
+      .icon {
+        width: 12px;
+        height: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div>Logo</div>
+
+      <div class="nav-btn-group">
+        <a class="text-blue"> Sia </a>
+        <a class="nav-btn"> SpotSearch </a>
+        <a class="nav-btn nav-btn-contained"> Try Sia </a>
+        <a class="nav-btn nav-btn-outlined"> Download SpotSearch </a>
+      </div>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="icon">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+      </svg>
+    </nav>
+  </body>
+</html>
