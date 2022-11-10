@@ -10,6 +10,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet" />
+    <!-- normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <!-- style -->
     <link rel="stylesheet" href="style.scss" />
   </head>
@@ -18,12 +22,12 @@
 
     <!-- Hero -->
     <div class="hero">
-      <div class="hero-content">
-        <div class="hero-title">
-          <div class="hero-title-1">Get 100% tuition</div>
-          <div class="hero-title-2">coverage at ASU</div>
+      <div class="hero__content">
+        <div class="hero__title">
+          <div class="hero__title__line-one">Get 100% tuition</div>
+          <div>coverage at ASU</div>
         </div>
-        <div class="hero-subtitle">
+        <div class="hero__subtitle">
           With the Starbucks College Achievement Plan, you can earn your degree
           100% online with 100% tuition coverage
         </div>
@@ -31,10 +35,10 @@
     </div>
 
     <!-- section one -->
-    <section>
-      <h1>
+    <section class="section-one">
+      <h1 class="section-one__title">
         The Starbucks College Achievement Plan makes a college
-        <span>affordable!</span>
+        <span class="section-one__title-highlight">affordable!</span>
       </h1>
 
       <p>
@@ -45,35 +49,78 @@
     </section>
 
     <!-- section two -->
-    <section>
-      <h1>How will I fund college?</h1>
-      <ul>
-        <li>
-          Each semester you'll receive a 42% scholarship toward undergraduate
-          tuition at ASU
-        </li>
-        <li>
-          You're responsible for paying the remaining out-of-pocket tuition
-          after the scholarship is applied at the beginning of the semester. The
-          Starbucks College Achievement Plan doesn't cover books or special
-          course fees.
-        </li>
-        <li>
-          Near the end of the semester, Starbucks will reimburse any tuition
-          costs not covered by the need-based financial aid directly in your
-          paycheck.
-        </li>
-      </ul>
+    <section class="section-two">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="section-two__image"
+        width="100%"
+        viewBox="0 0 16 9">
+        <rect x="0" y="0" height="100%" width="100%" fill="#A68C74" />
+      </svg>
+      <div class="section-two__content">
+        <h1 class="section-two__title">How will I fund college?</h1>
+
+        <div class="section-two__list">
+          
+          <!-- item one -->
+          <div class="section-two__list-item">
+            <div class="section-two__list-item-dot">
+              <svg width="100%" viewBox="-1 -1 2 2">
+                <circle r="1" cx="0" cy="0" fill="currentColor" />
+              </svg>
+            </div>
+
+            <div class="section-two__list-item-content">
+              Each semester you'll receive a 42% scholarship toward
+              undergraduate tuition at ASU
+            </div>
+          </div>
+
+          <!-- item two -->
+          <div class="section-two__list-item">
+            <div class="section-two__list-item-dot">
+              <svg width="100%" viewBox="-1 -1 2 2">
+                <circle r="1" cx="0" cy="0" fill="currentColor" />
+              </svg>
+            </div>
+
+            <div class="section-two__list-item-content">
+              You're responsible for paying the remaining out-of-pocket tuition
+              after the scholarship is applied at the beginning of the semester.
+              The Starbucks College Achievement Plan doesn't cover books or
+              special course fees.
+            </div>
+          </div>
+
+          <!-- item three -->
+          <div class="section-two__list-item">
+            <div class="section-two__list-item-dot">
+              <svg width="100%" viewBox="-1 -1 2 2">
+                <circle r="1" cx="0" cy="0" fill="currentColor" />
+              </svg>
+            </div>
+
+            <div class="section-two__list-item-content">
+              Near the end of the semester, Starbucks will reimburse any tuition
+              costs not covered by the need-based financial aid directly in your
+              paycheck.
+            </div>
+          </div>
+        </ul>
+      </div>
     </section>
 
     <!-- section three -->
-    <section>
-      <h1>Did you know?</h1>
-      <p>
-        In 2019, 80% of Starbucks College Achievement Plan participants received
-        grants to help with the upfront costs
-      </p>
-      <div>80%</div>
+    <section class="dyk-section">
+      <div class="dyk-section__content">
+        <div class="dyk-section__bg-stat" >80%</div>
+        <div class="dyk-section__title">Did you know?</div>
+        <div class="dyk-section__text">
+          In 2019, 80% of Starbucks College Achievement Plan participants received
+          grants to help with the upfront costs
+        </div>
+      </div>
+      <div class="dyk-section__stat">80%</div>
     </section>
 
     <!-- section four -->
@@ -99,13 +146,16 @@
     </section>
 
     <!-- section five -->
-    <section>
-      <h1>Did you know?</h1>
-      <p>
+    <section class="dyk-section">
+       <div class="dyk-section__content">
+        <div class="dyk-section__bg-stat" >3000+</div>
+        <div class="dyk-section__title">Did you know?</div>
+        <div class="dyk-section__text">
         More than 3000 partners have graduated through the Starbucks College
         Achievement Plan.
-      </p>
-      <div>3000+</div>
+        </div>
+      </div>
+      <div class="dyk-section__stat">3000+</div>
     </section>
 
     <!-- section six -->

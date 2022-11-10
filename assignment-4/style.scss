@@ -1,5 +1,18 @@
-$hero-color: #1f3933;
-$spacing: 12px;
+:root {
+  --highlight-color: #ffc627;
+  --green: #1f3933;
+  --background-color: #fff;
+  --section-title-font-size: 1.33rem;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+p {
+  margin: 0;
+}
 
 * {
   font-family: "Inter", sans-serif;
@@ -7,13 +20,16 @@ $spacing: 12px;
 
 .nav {
   width: 100%;
-  height: 64px;
+  height: 4rem;
 }
+
+// hero
 
 .hero {
   width: 100%;
-  background-color: $hero-color;
-  height: 360px;
+
+  background-color: var(--green);
+  height: 30rem;
   color: #fff;
   font-weight: bold;
   font-size: 2em;
@@ -21,25 +37,157 @@ $spacing: 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: $spacing;
+  padding: 2rem;
+
+  &__content {
+    width: 66%;
+    max-width: 25rem;
+  }
+
+  &__title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+
+    &__line-one {
+      margin-bottom: -0.3rem;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 100;
+    font-size: 0.5em;
+  }
 }
 
-.hero-title {
-  color: #fff;
-  font-weight: bold;
-  font-size: 0.8em;
-  margin-bottom: $spacing;
+// section one
+
+.section-one {
+  padding: 3rem 1.5rem;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+  &__title-highlight {
+    background-color: var(--highlight-color);
+  }
+  & > p {
+    font-weight: 200;
+  }
 }
 
-.hero-title-1 {
-  margin-bottom: -6px;
+//
+//
+//
+// Section Two
+//
+//
+//
+.section-two {
+  &__image {
+    position: relative;
+    z-index: 0;
+  }
+  &__content {
+    position: relative;
+    z-index: 10;
+    margin: 1.5rem;
+    padding: 2rem;
+    margin-top: -3rem;
+    background-color: var(--background-color);
+    height: auto;
+    border-radius: 0.33rem;
+  }
+
+  &__title {
+    display: inline;
+    background-color: var(--highlight-color);
+    font-size: var(--section-title-font-size);
+  }
+
+  &__list {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    list-style-type: none;
+  }
+
+  &__list-item {
+    display: flex;
+  }
+
+  &__list-item-dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    padding-top: 0.75rem;
+    padding-right: 1rem;
+  }
+
+  &__list-item-content {
+    flex: 1;
+    font-weight: 400;
+    font-size: 0.95rem;
+  }
 }
 
-.hero-subtitle {
-  font-weight: 100;
-  font-size: 0.5em;
-}
+//
+//
+// section three & section five
+//
+// Did you know? (dyk) Section
+//
+//
+//
 
-.hero-content {
-  max-width: 66%;
+.dyk-section {
+  padding: 6rem 2rem;
+
+  &__content {
+    position: relative;
+  }
+
+  &__bg-stat {
+    position: absolute;
+    z-index: 0;
+    font-weight: 900;
+    font-size: 9.5rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.075;
+    font-stretch: expanded;
+  }
+
+  &__title {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    text-align: center;
+    margin-bottom: 2rem;
+    opacity: 0.75;
+  }
+
+  &__stat {
+    font-weight: 800;
+    font-size: 2.75rem;
+    border: 0.5rem black solid;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 40%;
+    margin: auto;
+  }
 }
