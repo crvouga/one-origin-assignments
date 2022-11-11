@@ -7,6 +7,12 @@
   --blue: #007bb6;
 }
 
+// this a hack
+tspan {
+  stroke: #000;
+  fill: #000;
+}
+
 body {
   font-family: Roboto;
 }
@@ -133,8 +139,30 @@ body {
   max-width: 900px;
 }
 
-.ratio-md-1x1 {
-  @include media-breakpoint-up(md) {
+.ratio-lg-1x1 {
+  @include media-breakpoint-up(lg) {
     --bs-aspect-ratio: 100%;
+  }
+}
+
+.mr-lg-n4 {
+  @include media-breakpoint-up(lg) {
+    margin-right: -4rem;
+  }
+}
+
+.ml-lg-n4 {
+  @include media-breakpoint-up(lg) {
+    margin-left: -4rem;
+  }
+}
+
+.mt-n4 {
+  margin-top: -4rem;
+}
+
+.lg:justify-content-start {
+  @include media-breakpoint-up(lg) {
+    justify-content: start;
   }
 }
