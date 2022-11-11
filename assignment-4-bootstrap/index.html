@@ -23,14 +23,16 @@
 </head>
 
 <body>
+  <nav class="navbar sticky-top bg-white">
+    <div class="container">
+      <img class="navbar-brand max-width-1x2" src="assets/nav-logo.png" />
+    </div>
 
-  <nav class="sticky-top bg-white container-xl">
-    <img class="w-50 py-2" src="assets/nav-logo.png" />
   </nav>
 
   <!-- hero -->
   <section class="position-relative">
-    <img class="w-100 max-h-50vh" src="./assets/hero-lady.png" />
+    <img class="w-100 h-50vh object-cover" src="./assets/hero-lady.png" />
     <div class="position-absolute top-0 left-0 w-100 h-100 d-flex justify-content-center align-items-center">
       <div class="container text-white">
         <h1 class="col-8 fs-1">Get 100% tuition coverage at ASU</h1>
@@ -42,8 +44,7 @@
     </div>
   </section>
 
-  <!-- section one -->
-  <section class="container text-center py-5">
+  <section class="container max-width-xs text-center py-6">
     <h1 class="fs-2 fw-bolder pb-3">
       The Starbucks College Achievement Plan makes a college
       <span class="highlight-text">affordable!</span>
@@ -56,37 +57,44 @@
     </p>
   </section>
 
-  <!-- section two -->
+  <!-- bullet points -->
   <section class="container p-0">
-    <div class="ratio ratio-16x9" style="z-index: -1">
-      <img src="assets/coffee.png" />
-    </div>
-    <div class="container">
-      <div class="d-flex flex-column bg-white py-4 rounded-2" style="margin-top: -3rem">
-        <h2 class="fs-3 highlight-text fw-bold mx-auto mb-4">How will I fund college?</h2>
-        <ul class="fs-6">
-          <li class="mb-2 bullet">
-            Each semester you'll receive a 42% scholarship toward
-            undergraduate tuition at ASU
-          </li>
-          <li class="mb-2 bullet">
-            You're responsible for paying the remaining out-of-pocket tuition
-            after the scholarship is applied at the beginning of the semester.
-            The Starbucks College Achievement Plan doesn't cover books or
-            special course fees.
-          </li>
-          <li class="mb-2 bullet">
-            Near the end of the semester, Starbucks will reimburse any tuition
-            costs not covered by the need-based financial aid directly in your
-            paycheck.
-          </li>
-        </ul>
+
+    <div class="row">
+      <div class="col-12 col-md-4 justify-content-center align-items-center d-flex p-0">
+        <div class="ratio ratio-md-1x1 ratio-16x9" style="z-index: -1">
+        <img class="object-cover rounded-2" src="assets/coffee.png" />
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 justify-content-end align-items-center">
+        <div class="d-flex flex-column bg-white py-4 rounded-2">
+          <h2 class="fs-3 highlight-text fw-bold mx-auto mb-4">How will I fund college?</h2>
+          <ul class="fs-6">
+            <li class="mb-2 bullet">
+              Each semester you'll receive a 42% scholarship toward
+              undergraduate tuition at ASU
+            </li>
+            <li class="mb-2 bullet">
+              You're responsible for paying the remaining out-of-pocket tuition
+              after the scholarship is applied at the beginning of the semester.
+              The Starbucks College Achievement Plan doesn't cover books or
+              special course fees.
+            </li>
+            <li class="mb-2 bullet">
+              Near the end of the semester, Starbucks will reimburse any tuition
+              costs not covered by the need-based financial aid directly in your
+              paycheck.
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
+
   </section>
 
-  <!-- section three -->
-  <section class="container py-5 d-flex flex-column justify-content-center">
+  <!-- did you know? -->
+  <section class="mx-auto max-width-xs py-5 px-4 d-flex flex-column justify-content-center">
     <div class="position-relative mb-5">
       <img class="w-100" src="assets/ninety-percent-bg.png" />
       <div
@@ -99,77 +107,83 @@
       </div>
     </div>
 
-    
-      <svg class="w-1x3 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130">
-        <defs>
-          <style>
-            .a,
-            .d {
-              fill: #1f3933;
-            }
 
-            .a {
-              font-size: 45px;
-              font-family: Roboto-Black, Roboto;
-              font-weight: 800;
-              letter-spacing: -0.005em;
-            }
+    <svg class="w-1x3 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130">
+      <defs>
+        <style>
+          .a,
+          .d {
+            fill: #1f3933;
+          }
 
-            .b {
-              fill: none;
-            }
+          .a {
+            font-size: 45px;
+            font-family: Roboto-Black, Roboto;
+            font-weight: 800;
+            letter-spacing: -0.005em;
+            fill: black;
+          }
 
-            .c,
-            .d {
-              stroke: none;
-            }
-          </style>
-        </defs>
-        <g transform="translate(-587 -1804)"><text class="a" transform="translate(652 1885)">
-            <tspan x="-42.534" y="0">90%</tspan>
-          </text>
-          <g class="b" transform="translate(587 1804)">
-            <path class="c" d="M65,0A65,65,0,1,1,0,65,65,65,0,0,1,65,0Z" />
-            <path class="d"
-              d="M 65 7 C 33.01869201660156 7 7 33.01869201660156 7 65 C 7 96.98130798339844 33.01869201660156 123 65 123 C 96.98130798339844 123 123 96.98130798339844 123 65 C 123 33.01869201660156 96.98130798339844 7 65 7 M 65 0 C 100.8984985351563 0 130 29.10150146484375 130 65 C 130 100.8984985351563 100.8984985351563 130 65 130 C 29.10150146484375 130 0 100.8984985351563 0 65 C 0 29.10150146484375 29.10150146484375 0 65 0 Z" />
-          </g>
+          .b {
+            fill: none;
+          }
+
+          .c,
+          .d {
+            stroke: none;
+          }
+        </style>
+      </defs>
+      <g transform="translate(-587 -1804)"><text class="a" transform="translate(652 1885)">
+          <tspan x="-42.534" y="0">90%</tspan>
+        </text>
+        <g class="b" transform="translate(587 1804)">
+          <path class="c" d="M65,0A65,65,0,1,1,0,65,65,65,0,0,1,65,0Z" />
+          <path class="d"
+            d="M 65 7 C 33.01869201660156 7 7 33.01869201660156 7 65 C 7 96.98130798339844 33.01869201660156 123 65 123 C 96.98130798339844 123 123 96.98130798339844 123 65 C 123 33.01869201660156 96.98130798339844 7 65 7 M 65 0 C 100.8984985351563 0 130 29.10150146484375 130 65 C 130 100.8984985351563 100.8984985351563 130 65 130 C 29.10150146484375 130 0 100.8984985351563 0 65 C 0 29.10150146484375 29.10150146484375 0 65 0 Z" />
         </g>
-      </svg>
-    
+      </g>
+    </svg>
+
   </section>
 
-  <!-- section four -->
+  <!-- bullet points -->
   <section class="container p-0">
-    <div class="ratio ratio-16x9" style="z-index: -1">
-      <img src="assets/walking-with-folder.png" />
-    </div>
-    <div class="container">
-      <div class="d-flex flex-column bg-white py-4 rounded-2" style="margin-top: -3rem">
-        <h2 class="fs-3 highlight-text fw-bold mx-auto mb-4">What about other expenses?</h2>
-        <ul class="fs-6">
-          <li class="mb-2 bullet">
-            Each semester you'll receive a 42% scholarship toward
-            undergraduate tuition at ASU
-          </li>
-          <li class="mb-2 bullet">
-            You're responsible for paying the remaining out-of-pocket tuition
-            after the scholarship is applied at the beginning of the semester.
-            The Starbucks College Achievement Plan doesn't cover books or
-            special course fees.
-          </li>
-          <li class="mb-2 bullet">
-            Near the end of the semester, Starbucks will reimburse any tuition
-            costs not covered by the need-based financial aid directly in your
-            paycheck.
-          </li>
-        </ul>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="ratio ratio-16x9" style="z-index: -1">
+          <img src="assets/walking-with-folder.png" />
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="d-flex flex-column bg-white py-4 rounded-2">
+          <h2 class="fs-3 highlight-text fw-bold mx-auto mb-4">What about other expenses?</h2>
+          <ul class="fs-6">
+            <li class="mb-2 bullet">
+              Each semester you'll receive a 42% scholarship toward
+              undergraduate tuition at ASU
+            </li>
+            <li class="mb-2 bullet">
+              You're responsible for paying the remaining out-of-pocket tuition
+              after the scholarship is applied at the beginning of the semester.
+              The Starbucks College Achievement Plan doesn't cover books or
+              special course fees.
+            </li>
+            <li class="mb-2 bullet">
+              Near the end of the semester, Starbucks will reimburse any tuition
+              costs not covered by the need-based financial aid directly in your
+              paycheck.
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
 
-  <!-- section five -->
-  <section class="container py-5 d-flex flex-column justify-content-center">
+  <!-- did you know? -->
+  <section class="mx-auto max-width-xs py-5 px-4 d-flex flex-column justify-content-center">
     <div class="position-relative mb-5">
       <img class="w-100" src="assets/one-hundred-plus-bg.png" />
       <div
@@ -182,131 +196,175 @@
       </div>
     </div>
 
-    
-      <svg class="w-1x3 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130">
-        <defs>
-          <style>
-            .a,
-            .d {
-              fill: #1f3933;
-            }
 
-            .a {
-              font-size: 45px;
-              font-family: Roboto-Black, Roboto;
-              font-weight: 800;
-              letter-spacing: -0.005em;
-            }
-
-            .b {
-              fill: none;
-            }
-
-            .c,
-            .d {
-              stroke: none;
-            }
-          </style>
-        </defs>
-        <g transform="translate(-587 -1804)"><text class="a" transform="translate(652 1885)">
-            <tspan x="-50.771" y="0">100+</tspan>
-          </text>
-          <g class="b" transform="translate(587 1804)">
-            <path class="c" d="M65,0A65,65,0,1,1,0,65,65,65,0,0,1,65,0Z" />
-            <path class="d"
-              d="M 65 7 C 33.01869201660156 7 7 33.01869201660156 7 65 C 7 96.98130798339844 33.01869201660156 123 65 123 C 96.98130798339844 123 123 96.98130798339844 123 65 C 123 33.01869201660156 96.98130798339844 7 65 7 M 65 0 C 100.8984985351563 0 130 29.10150146484375 130 65 C 130 100.8984985351563 100.8984985351563 130 65 130 C 29.10150146484375 130 0 100.8984985351563 0 65 C 0 29.10150146484375 29.10150146484375 0 65 0 Z" />
-          </g>
+    <svg class="w-1x3 mx-auto text-black fill-black stroke-black" xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 130 130">
+      <g transform="translate(-587 -1804)"><text class="a" transform="translate(652 1885)">
+          <tspan x="-50.771" y="0">100+</tspan>
+        </text>
+        <g class="b" transform="translate(587 1804)">
+          <path class="c" d="M65,0A65,65,0,1,1,0,65,65,65,0,0,1,65,0Z" />
+          <path class="d"
+            d="M 65 7 C 33.01869201660156 7 7 33.01869201660156 7 65 C 7 96.98130798339844 33.01869201660156 123 65 123 C 96.98130798339844 123 123 96.98130798339844 123 65 C 123 33.01869201660156 96.98130798339844 7 65 7 M 65 0 C 100.8984985351563 0 130 29.10150146484375 130 65 C 130 100.8984985351563 100.8984985351563 130 65 130 C 29.10150146484375 130 0 100.8984985351563 0 65 C 0 29.10150146484375 29.10150146484375 0 65 0 Z" />
         </g>
-      </svg>
-    
+      </g>
+    </svg>
+
   </section>
 
 
-  <!-- section six -->
-  <section class="shq">
-    <div class="shq__title">What if I still have questions?</div>
-    <div class="shq__content">
-      <div class="shq__item">
-        <!-- college cap icon -->
+  <!-- still have questions? -->
+  <section class="container text-center max-width-md">
+    <h2 class="d-inline-block fs-2 fw-bold highlight-text mb-4">What if I still have questions?</h2>
+    <div class="container w-100 bg-dark-green text-white py-5 rounded-2 d-flex flex-column align-items-center gap-5">
 
-        <svg class="shq__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-          stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round"
-            d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
-        </svg>
+      <div class="row">
+        <div class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-between gap-3 p-4">
+          <!-- degree hat -->
+          <div class="w-50 bg-brighten-10 rounded-circle ratio ratio-1x1">
+            <svg class="w-100 h-100 p-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59.836 40.564">
+              <defs>
+                <style>
+                  .a {
+                    fill: none;
+                    stroke: #fff;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 3px;
+                  }
+                </style>
+              </defs>
+              <g transform="translate(-1810.163 -3467.029)">
+                <line class="a" y2="9.515" transform="translate(1815.372 3490.451)" />
+                <path class="a"
+                  d="M1817.917,3489.07a1.478,1.478,0,0,1-1.475,1.481h-2.911a1.478,1.478,0,0,1-1.474-1.481l.7-3.166a1.477,1.477,0,0,1,1.476-1.48h1.519a1.475,1.475,0,0,1,1.473,1.48Z"
+                  transform="translate(0.386 15.542)" />
+                <path class="a" d="M1821.137,3468.53h39.707l7.655,17.736h-56.836Z" transform="translate(0 0)" />
+                <path class="a"
+                  d="M1821.778,3477.5l-3.281,14.346c0,3.515,6.71,5.482,14.987,5.482s14.99-1.967,14.99-5.482l-3.283-14.346"
+                  transform="translate(6.682 8.768)" />
+                <line class="a" x2="22.259" transform="translate(1817.052 3476.324)" />
+              </g>
+            </svg>
+          </div>
+          <h6 class="fs-4 my-3">Ready to begin the application?</h6>
+          <a class="text-decoration-none p-3 ts-4 bg-gold text-dark-green rounded-2 fw-bold d-inline">Apply now</a>
+        </div>
 
-        <p class="shq__subtitle">Ready to begin the application?</p>
-        <a class="shq__btn">Apply now</a>
-      </div>
-      <div class="shq__item">
-        <!-- call icon -->
-        <svg class="shq__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-          stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round"
-            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
-        </svg>
+        <div class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-between p-4">
+          <!-- call icon -->
+          <div class="w-50 bg-brighten-10 rounded-circle ratio ratio-1x1">
+            <svg class="w-100 h-100 p-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.906 47.165">
+              <defs>
+                <style>
+                  .a {
+                    fill: none;
+                    stroke: #fff;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 3px;
+                  }
+                </style>
+              </defs>
+              <g transform="translate(-130.318 -2681.609)">
+                <path class="a"
+                  d="M161.129,2708.881a.956.956,0,0,0-1.333-.024s-2.731,2.673-2.912,2.838a.582.582,0,0,1-.15.108c-2.839,1.438-13.087-9.534-11.132-11.6l2.922-2.862a.958.958,0,0,0,.013-1.354l-9.561-9.749a.953.953,0,0,0-.674-.287.963.963,0,0,0-.678.276c-4.787,4.7-12.464,9.426,5.467,27.714,17.7,18.047,22.768,11.207,27.653,5.955a.958.958,0,0,0-.017-1.325Z"
+                  transform="translate(0 1.612)" />
+                <path class="a" d="M160.555,2701.044a13.229,13.229,0,0,0-13.69-13.692"
+                  transform="translate(8.526 2.4)" />
+                <path class="a" d="M167.193,2703.444a19.858,19.858,0,0,0-20.328-20.329" transform="translate(8.526)" />
+                <path class="a" d="M146.865,2691.592a6.619,6.619,0,0,1,7.054,7.054"
+                  transform="translate(8.526 4.797)" />
+              </g>
+            </svg>
+          </div>
+          <h6 class="fs-4 my-3">Speak to an enrollment advisor.</h6>
+          <a class="text-decoration-none p-3 ts-4 bg-gold text-dark-green rounded-2 fw-bold">844-ASU-SBUX</a>
+        </div>
 
-        <p class="shq__subtitle">Speak to an enrollment advisor.</p>
-        <a class="shq__btn">844-ASU-SBUX</a>
-      </div>
-      <div class="shq__item">
-        <!-- chat icon -->
-        <svg class="shq__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-          stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round"
-            d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
-        </svg>
-        <p class="shq__subtitle">
-          Have a question? <br />
-          Chat with out team.
-        </p>
-        <a class="shq__btn">Chat now</a>
+        <div class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-between p-4">
+          <!-- chat icon -->
+          <div class="w-50 bg-brighten-10 rounded-circle ratio ratio-1x1">
+            <svg class="w-100 h-100 p-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58.81 49.983">
+              <defs>
+                <style>
+                  .a {
+                    fill: none;
+                    stroke: #fff;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 3px;
+                  }
+                </style>
+              </defs>
+              <g transform="translate(1.5 1.5)">
+                <path class="a"
+                  d="M563,2595c-7.387-1.285-11.392-7.536-11.392-15.151,0-8.542,5.87-15.393,13.528-15.393h14.033c7.656,0,13.864,7.012,13.864,15.556s-6.209,15.509-13.864,15.509h-4.421L563,2606.078Z"
+                  transform="translate(-551.608 -2564.459)" />
+                <path class="a"
+                  d="M565.86,2590.506c1.7,3.2,4.872,5.758,8.517,5.758h3.807l6.336,6.334v-6.885c4.924-.186,9.575-5.019,9.575-10.961,0-6.056-4.371-10.83-9.8-10.83"
+                  transform="translate(-538.286 -2555.615)" />
+                <path class="a" d="M565.5,2581.033" transform="translate(-538.619 -2548.968)" />
+                <line class="a" x2="19.348" transform="translate(11.374 9.751)" />
+                <line class="a" x2="19.348" transform="translate(11.374 15.556)" />
+                <line class="a" x2="9.7" transform="translate(11.374 21.36)" />
+              </g>
+            </svg>
+          </div>
+          <h6 class="fs-4 my-3">
+            Have a question? Chat with out team.
+          </h6>
+          <a class="text-decoration-none p-3 ts-4 bg-gold text-dark-green rounded-2 fw-bold">Chat now</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- section seven -->
-  <section class="htw">
-    <h2 class="htw__title">How does the Starbucks College Achievement Plan work?</h2>
+  <!-- how it works -->
+  <section class="bg-dark-green w-100 text-white mt-5 py-5 font-serif container">
+    <h2 class="fs-2 my-5 text-center">How does the Starbucks College Achievement Plan work?</h2>
 
-    <div class="htw__graphic-wrapper">
-      <img class="htw__graphic" src="./assets/how-it-works.png" />
+
+    <div class="">
+      <img class="w-100 mb-5" src="./assets/how-it-works.png" />
     </div>
 
-    <div class="htw__items">
-      <div class="htw__item">
-        <div class="htw__dot htw__gold"></div>
-        <h6 class="htw__subtitle">Your scholarship</h6>
-        <p class="htw__text">
+    <div class="">
+      <div class="mb-5">
+        <div class="dot bg-gold"></div>
+        <h6 class="fs-1">Your scholarship</h6>
+        <p class="fs-6">
           As a benefits-eligible Starbucks partner, you'll receive a 42% each
           semester towards your undergraduate tuition at ASU
         </p>
       </div>
 
-      <div class="htw__item">
-        <div class="htw__dot htw__blue"></div>
-        <h6 class="htw__subtitle">Student out-of-pocket costs</h6>
-        <p class="htw__highlight">(student responsibility)</p>
-        <p class="htw__text">
+      <div class="mb-5">
+        <div class="dot bg-blue"></div>
+        <h6 class="fs-1 m-0">Student out-of-pocket costs</h6>
+        <p class="fs-5 text-gold">(student responsibility)</p>
+        <p class="fs-6">
           After the scholarship and federal aid (if applicable) is applied,
           you're responsible for the paying the remaining out-of-pocket
           tuition at the beginning of the semester. These costs are
         </p>
       </div>
-      <div class="htw__item">
-        <div class="htw__dot htw__white"></div>
-        <h6 class="htw__subtitle">Need-based grant</h6>
-        <p class="htw__text">
+
+      <div class="mb-5">
+        <div class="dot bg-white"></div>
+        <h6 class="fs-1">Need-based grant</h6>
+        <p class="fs-6">
           Need-base aid includes grants like the Pell Grant or University
           Grant, which are awarded based on the financial need of the
           student/family as determined by the FAFSA
         </p>
       </div>
-      <div class="htw__item">
-        <div class="htw__dot htw__maroon"></div>
-        <h6 class="htw__subtitle">Fees books & supplies</h6>
-        <p class="htw__highlight">(student responsibility)</p>
-        <p class="htw__text">
+
+      <div class="mb-5">
+        <div class="dot bg-maroon"></div>
+        <h6 class="fs-1 m-0">Fees books & supplies</h6>
+        <p class="fs-5 text-gold">(student responsibility)</p>
+        <p class="fs-6">
           Starbucks doesn't cover books or special course fees. Yet, most
           partners find their financial aid will
         </p>
@@ -315,10 +373,11 @@
 
   </section>
   </main>
+
   <!-- footer -->
-  <footer class="footer">
-    <div class="footer__bar">ASU is #1 in the U.S. for Innovation</div>
-    <div class="footer__links">
+  <footer class="container p-0">
+    <div class="bg-gold w-100 p-2 fw-bold fs-5 text-md-center">ASU is #1 in the U.S. for Innovation</div>
+    <div class="d-flex flex-md-row gap-md-4 p-md-4 flex-column p-2 gap-2 bg-gray">
       <a>Copyright and Trademark</a>
       <a>Accessibility</a>
       <a>Privacy</a>
