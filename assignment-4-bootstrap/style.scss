@@ -1,0 +1,32 @@
+:root {
+  --gold: #ffc627;
+}
+
+body {
+  font-family: Roboto;
+}
+
+.bg-dark-green {
+  background-color: #29413b !important;
+}
+.highlight-text {
+  background: var(--gold);
+  display: inline;
+  letter-spacing: 0.2px;
+  -webkit-box-shadow: 5px 0 0 var(--gold), -5px 0 0 var(--gold);
+  box-shadow: 5px 0 0 var(--gold), -5px 0 0 var(--gold);
+  box-decoration-break: clone;
+  line-height: 1.32;
+}
+
+.bullet {
+  list-style-image: url("https://starbucks.asu.edu/img/List-bullet-4.53f73e4a.svg");
+}
+
+.ninety-percent {
+  mask: url(assets/ninety-percent.svg) no-repeat center;
+}
+
+.w-1x3 {
+  width: calc(1 / 3 * 100%);
+}
