@@ -1,34 +1,73 @@
 :root {
-  --highlight-color: #ffc627;
-  --green: #1f3933;
-  --background-color: #fff;
-  --section-title-font-size: 1.33rem;
+  /* Colors: */
+  --starbucks-green: #1f3933;
+  --white-color-ffffff: #ffffff;
+  --spacing-color: #00ffff00;
+  --asu-gold-color-ffc627: #ffc627;
+  --font-color-2a2a2a: #2a2a2a;
+  --gray-global-footer-color-e5e5e5: #e5e5e5;
+  --unnamed-color-29413b: #29413b;
+  --asu-maroon-color-8c1d40: #8c1d40;
+  --info-color-008ed6: #00a3e0;
+  --success-color-148e4b: #78be20;
+  --asu-orange-color-ff7f32: #ff7f32;
+  --black-color-000000: #000000;
+  --dark-color-1e1e1e: #1e1e1e;
+  --gray-color-f1f1f1: #f1f1f1;
+  --starbucks-color-00704a: #00704a;
+  --asia-society-primary-color-00154d: #00154d;
+  --asia-society-secondary-color-ef4e1e: #ef4e1e;
+  --agfe-purple-color-842a97: #842a97;
+  --agfe-orange-color-ff6a13: #ff6a13;
+  --secondary-cta-button-color-dbdbdb: #dbdbdb;
+  --hover-maroon-button-color-d23153: #d23153;
+  --hover-gold-button-color-ffd053: #ffd053;
+  --hover-blue-button-color-0085e2: #0085e2;
+  --hover-gray-button-color-f2f2f2: #f2f2f2;
+  --blue-explore-button-007bb6: #007bb6;
+  --warning-color-ec5937: #9e3f5d;
+  --danger-color-bfe319: #bfe319;
+  --unnamed-color-006340: #006340;
 }
 
 html,
 body {
   overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
 }
 
 p {
   margin: 0;
 }
 
-* {
-  font-family: "Inter", sans-serif;
-}
+//
+//
+//
+// nav
+//
+//
+//
 
 .nav {
   width: 100%;
-  height: 4rem;
+  height: 3rem;
+  padding: 0.5rem;
+  &__logo {
+    height: 100%;
+    max-width: 50%;
+  }
 }
 
+//
+//
 // hero
+//
+//
 
 .hero {
   width: 100%;
-
-  background-color: var(--green);
+  // position: relative;
+  background-color: var(--starbucks-green);
   height: 30rem;
   color: #fff;
   font-weight: bold;
@@ -37,11 +76,15 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem;
+  padding: 1rem;
+  z-index: -1;
 
   &__content {
+    z-index: 1;
     width: 66%;
     max-width: 25rem;
+    z-index: 1;
+    overflow: hidden;
   }
 
   &__title {
@@ -49,16 +92,24 @@ p {
     font-weight: bold;
     font-size: 1.75rem;
     margin-bottom: 1rem;
-
-    &__line-one {
-      margin-bottom: -0.3rem;
-    }
   }
 
   &__subtitle {
     font-weight: 100;
     font-size: 0.5em;
   }
+
+  &__image {
+    z-index: 0;
+    position: absolute;
+    left: 20vw;
+    top: 4rem;
+    max-width: 100vw;
+  }
+}
+
+.main {
+  background-color: #fff;
 }
 
 // section one
@@ -71,7 +122,7 @@ p {
     margin-bottom: 2rem;
   }
   &__title-highlight {
-    background-color: var(--highlight-color);
+    background-color: var(--asu-gold-color-ffc627);
   }
   & > p {
     font-weight: 200;
@@ -81,30 +132,33 @@ p {
 //
 //
 //
-// Section Two
+// Bullet Point (bp) Section
 //
 //
 //
-.section-two {
+.bp-section {
   &__image {
-    position: relative;
+    // position: relative;
     z-index: 0;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
   }
   &__content {
     position: relative;
     z-index: 10;
     margin: 1.5rem;
-    padding: 2rem;
+    padding: 1.5rem;
     margin-top: -3rem;
-    background-color: var(--background-color);
+    background-color: #fff;
     height: auto;
     border-radius: 0.33rem;
   }
 
   &__title {
     display: inline;
-    background-color: var(--highlight-color);
-    font-size: var(--section-title-font-size);
+    background-color: var(--asu-gold-color-ffc627);
+    font-size: 1.5rem;
   }
 
   &__list {
@@ -122,7 +176,7 @@ p {
   &__list-item-dot {
     width: 0.75rem;
     height: 0.75rem;
-    padding-top: 0.75rem;
+    padding-top: 0.25rem;
     padding-right: 1rem;
   }
 
@@ -143,26 +197,23 @@ p {
 //
 
 .dyk-section {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &__content {
     position: relative;
+    margin-bottom: 3rem;
   }
 
-  &__bg-stat {
+  &__bg-img {
     position: absolute;
-    z-index: 0;
-    font-weight: 900;
-    font-size: 9.5rem;
+    z-index: -1;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.075;
-    font-stretch: expanded;
   }
 
   &__title {
@@ -178,16 +229,178 @@ p {
     opacity: 0.75;
   }
 
-  &__stat {
-    font-weight: 800;
-    font-size: 2.75rem;
-    border: 0.5rem black solid;
-    border-radius: 50%;
-    aspect-ratio: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  &__svg {
     max-width: 40%;
-    margin: auto;
+  }
+}
+
+//
+//
+//
+// Still have questions? (shq) section
+//
+//
+//
+
+.shq {
+  padding: 0 1rem;
+  padding-bottom: 4rem;
+  &__title {
+    background-color: var(--asu-gold-color-ffc627);
+    font-size: 1.45rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  &__content {
+    padding: 4rem 2rem;
+    background-color: var(--starbucks-green);
+    border-radius: 0.25rem;
+    color: #fff;
+    //
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  &__icon {
+    width: 100%;
+    max-width: 6rem;
+    background-color: rgba($color: #fff, $alpha: 0.1);
+    padding: 2rem;
+    border-radius: 50%;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &__btn {
+    padding: 1rem;
+    color: var(--starbucks-green);
+    background-color: var(--asu-gold-color-ffc627);
+    border-radius: 0.25rem;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+//
+//
+//
+// How it works? (htw) section
+//
+//
+//
+
+.htw {
+  background-color: var(--starbucks-green);
+  color: #fff;
+  padding: 4rem 0;
+  margin-top: 4rem;
+
+  &__title {
+    font-family: serif;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: lighter;
+  }
+
+  &__graphic-wrapper {
+    padding: 0.5rem;
+  }
+
+  &__graphic {
+    width: 100%;
+  }
+
+  &__items {
+    padding: 0rem 1rem;
+  }
+
+  &__item {
+    padding-bottom: 0rem;
+    margin-bottom: 2rem;
+  }
+
+  &__dot {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #00a3e0;
+    margin-bottom: 0.66rem;
+  }
+
+  &__subtitle {
+    font-size: 1.6rem;
+    margin: 0;
+    font-weight: 100;
+    font-family: serif;
+  }
+
+  &__highlight {
+    color: var(--asu-gold-color-ffc627);
+    font-family: serif;
+    font-weight: 100;
+  }
+
+  &__text {
+    margin-top: 0.75rem;
+    font-size: 1rem;
+  }
+
+  &__gold {
+    background-color: var(--asu-gold-color-ffc627);
+  }
+
+  &__white {
+    background-color: #fff;
+  }
+
+  &__blue {
+    background-color: var(--blue-explore-button-007bb6);
+  }
+
+  &__maroon {
+    background-color: var(--asu-maroon-color-8c1d40);
+  }
+}
+
+//
+//
+// footer
+//
+//
+
+.footer {
+  background-color: var(--gray-global-footer-color-e5e5e5);
+  color: var(--dark-color-1e1e1e);
+
+  & > a {
+    display: block;
+  }
+  &__bar {
+    width: 100%;
+    background-color: var(--asu-gold-color-ffc627);
+    font-weight: 800;
+    padding: 1rem;
+  }
+
+  &__links {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
   }
 }
