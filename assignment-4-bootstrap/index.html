@@ -26,7 +26,7 @@
   </head>
 
   <body>
-    <nav class="navbar sticky-top bg-white">
+    <nav class="navbar bg-white">
       <div class="container">
         <img class="navbar-brand max-width-1x2" src="assets/nav-logo.png" />
       </div>
@@ -65,9 +65,14 @@
       </section>
 
       <!-- bullet points -->
-      <section class="container p-0">
+      <section class="container w-fu;; p-0 position-relative">
+        <!-- mesh -->
+        <div class="position-absolute w-100 top-0 d-lg-none overflow-hidden d-flex justify-content-end" style="margin-top: -1.75rem">
+          <img  style="margin-right: -4rem;" src="assets/mesh.svg" />
+        </div>
+        
         <div class="row flex-wrap-reverse align-items-center">
-          <div class="col-lg-8 p-0 mr-lg-n4 mt-lg-0 mt-n4">
+          <div class="col-lg-7 p-0 mr-lg-n4 mt-lg-0 mt-n4">
             <div class="p-4">
               <div class="d-flex flex-column bg-white p-4">
                 <div class="mb-4 d-flex">
@@ -96,22 +101,24 @@
             </div>
           </div>
 
-          <div class="col-lg-4 p-0">
+          <div class="col-lg-5 p-0 position-relative">
             <div class="ratio ratio-lg-1x1 ratio-16x9" style="z-index: -1">
               <img class="object-cover rounded-1" src="assets/coffee.png" />
             </div>
+            <!-- mesh -->
+            <img  class="position-absolute bottom-0 d-none d-lg-block" style="margin-bottom: -1.75rem; margin-left: -6rem; width: 18rem" src="assets/mesh.svg" />
           </div>
         </div>
       </section>
 
       <!-- did you know? -->
       <section
-        class="mx-auto max-width-xs p-4 d-flex flex-column justify-content-center">
+        class="mx-auto max-width-xs px-2 py-4 d-flex flex-column justify-content-center">
         <div class="position-relative mb-5">
           <img class="w-100" src="assets/ninety-percent-bg.png" />
           <div
             class="position-absolute top-0 left-0 w-100 h-100 container d-flex justify-content-center align-items-center flex-column text-center">
-            <h2 class="fs-2 fw-bold">Did you know?</h2>
+            <h2 class="fs-1 fw-bold">Did you know?</h2>
             <p class="">
               In 2019, 90% of Starbucks College Achievement Plan participants
               received grants to help with the upfront costs
@@ -163,17 +170,26 @@
       </section>
 
       <!-- bullet points -->
-      <section class="container p-0">
+      <section class="container p-0 position-relative">
+        <!-- mesh -->
+        <div class="d-lg-none position-absolute w-100 top-0 overflow-hidden d-flex justify-content-start" style="margin-top: -1.75rem">
+          <img  style="margin-left: -4rem;" src="assets/mesh.svg" />
+        </div>
+
         <div class="row align-items-center">
-          <div class="col-lg-4 p-0">
+          <div class="col-lg-5 p-0 position-relative">
             <div class="ratio ratio-lg-1x1 ratio-16x9" style="z-index: -1">
               <img
                 class="object-cover rounded-1"
                 src="assets/walking-with-folder.png" />
             </div>
+            <!-- mesh -->
+            <div class=" overflow-hidden position-absolute bottom-0 d-none d-lg-block" style="margin-bottom: -2.5rem;">
+              <img  style="margin-left: -6rem; width: 18rem" src="assets/mesh.svg" />
+            </div>
           </div>
 
-          <div class="col-lg-8 p-0 ml-lg-n4 mt-lg-0 mt-n4">
+          <div class="col-lg-7 p-0 ml-lg-n4 mt-lg-0 mt-n4">
             <div class="p-4">
               <div class="d-flex flex-column bg-white p-4">
                 <div class="mb-4 d-flex">
@@ -206,12 +222,12 @@
 
       <!-- did you know? -->
       <section
-        class="mx-auto max-width-xs py-5 px-4 d-flex flex-column justify-content-center">
+        class="mx-auto max-width-xs px-2 py-4 d-flex flex-column justify-content-center">
         <div class="position-relative mb-5">
           <img class="w-100" src="assets/one-hundred-plus-bg.png" />
           <div
             class="position-absolute top-0 left-0 w-100 h-100 container d-flex justify-content-center align-items-center flex-column text-center">
-            <h2 class="fs-2 fw-bold">Did you know?</h2>
+            <h2 class="fs-1 fw-bold">Did you know?</h2>
             <p class="">
               More than 100 partners have graduated through the Starbucks
               College Achievement Plan.
@@ -220,7 +236,7 @@
         </div>
 
         <svg
-          class="w-1x3 mx-auto text-black fill-black stroke-black"
+          class="w-1x3 mx-auto mt-n3 text-black fill-black stroke-black"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 130 130">
           <g transform="translate(-587 -1804)">
@@ -238,12 +254,20 @@
       </section>
 
       <!-- still have questions? -->
-      <section class="container text-center max-width-md">
-        <h2 class="d-inline-block fs-2 fw-bold highlight-text mb-4">
+      <section class="container text-center max-width-md position-relative mb-5">
+        <h2 class="d-inline-block fs- fw-bold highlight-text mb-4">
           What if I still have questions?
         </h2>
+        <!-- mesh -->
+        
+        <img class="d-none d-lg-block position-absolute" style="margin-left: -6rem; margin-top: -5rem; width: 12rem; z-index: -1;" src="assets/mesh-square.svg" />
+        
+        <img class="d-none d-lg-block position-absolute bottom-0 end-0" style="margin-right: -6rem; margin-bottom: -2rem; width: 20rem; z-index: -1;" src="assets/mesh.svg" />
+        
         <div
-          class="container w-100 bg-dark-green text-white py-5 rounded-2 d-flex flex-column align-items-center gap-5">
+          class="container w-100 bg-dark-green text-white py-5 rounded-2 d-flex flex-column align-items-center gap-5"
+          
+          >
           <div class="row">
             <div
               class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-between gap-3 p-4">
@@ -289,8 +313,8 @@
                 </svg>
               </div>
               <h6 class="fs-4 my-3">Ready to begin the application?</h6>
-              <a
-                class="text-decoration-none p-3 ts-4 bg-gold text-dark-green rounded-2 fw-bold d-inline"
+              <button
+                class="btn btn-link text-decoration-none p-3 ts-4 bg-gold text-dark-green rounded-2 fw-bold d-inline"
                 >Apply now</a
               >
             </div>
@@ -336,7 +360,7 @@
               </div>
               <h6 class="fs-4 my-3">Speak to an enrollment advisor.</h6>
               <a
-                class="text-decoration-none p-3 ts-4 bg-gold text-dark-green rounded-2 fw-bold"
+                class="btn btn-link text-decoration-none p-3 ts-4 bg-gold text-dark-green rounded-2 fw-bold"
                 >844-ASU-SBUX</a
               >
             </div>
@@ -390,7 +414,7 @@
               </div>
               <h6 class="fs-4 my-3">Have a question? Chat with out team.</h6>
               <a
-                class="text-decoration-none p-3 ts-4 bg-gold text-dark-green rounded-2 fw-bold"
+                class="btn btn-link text-decoration-none p-3 ts-4 bg-gold text-dark-green rounded-2 fw-bold"
                 >Chat now</a
               >
             </div>
@@ -400,14 +424,16 @@
 
       <!-- how it works -->
       <section
-        class="bg-dark-green w-100 text-white mt-5 py-5 font-serif container">
+        class="bg-dark-green w-100 text-white mt-5 p-5 font-serif container d-none d-lg-block">
+        <img class="w-100 mb-5" src="./assets/how-it-works-desktop.png" />
+      </section>
+      <section
+        class="bg-dark-green w-100 text-white mt-5 py-5 font-serif container d-lg-none">
         <h2 class="fs-2 my-5 text-center">
           How does the Starbucks College Achievement Plan work?
         </h2>
 
-        <div class="">
-          <img class="w-100 mb-5" src="./assets/how-it-works.png" />
-        </div>
+        <img class="w-100 mb-5" src="./assets/how-it-works-mobile.png" />
 
         <div class="">
           <div class="mb-5">

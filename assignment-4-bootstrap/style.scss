@@ -161,8 +161,20 @@ body {
   margin-top: -4rem;
 }
 
+.mt-n3 {
+  margin-top: -3rem;
+}
+
 .lg:justify-content-start {
   @include media-breakpoint-up(lg) {
     justify-content: start;
   }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
